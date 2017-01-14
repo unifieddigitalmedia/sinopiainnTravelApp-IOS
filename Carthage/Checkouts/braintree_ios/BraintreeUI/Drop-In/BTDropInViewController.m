@@ -35,9 +35,6 @@
 
 @property (nonatomic, assign) BOOL originalCoinbaseStoreInVault;
 
-/// Used to strongly retain any BTDropInErrorAlert instances in case UIViewAlert is used
-@property (nonatomic, strong, nonnull) NSMutableSet *errorAlerts;
-
 @end
 
 @implementation BTDropInViewController
@@ -61,8 +58,6 @@
         self.selectedPaymentMethodNonceIndex = NSNotFound;
         self.dropInContentView.state = BTDropInContentViewStateActivity;
         self.fullForm = YES;
-
-        self.errorAlerts = [NSMutableSet set];
     }
     return self;
 }
@@ -113,10 +108,7 @@
         if (error) {
             BTDropInErrorAlert *errorAlert = [[BTDropInErrorAlert alloc] initWithPresentingViewController:self];
             errorAlert.title = error.localizedDescription ?: BTDropInLocalizedString(ERROR_ALERT_CONNECTION_ERROR);
-            [self.errorAlerts addObject:errorAlert];
-            [errorAlert showWithDismissalHandler:^{
-                [self.errorAlerts removeObject:errorAlert];
-            }];
+            [errorAlert show];
         }
 
         NSArray <NSString *> *challenges = [configuration.json[@"challenges"] asStringArray];
@@ -348,10 +340,7 @@
                             // Use the paymentMethodNonces setter to update state
                             weakSelf.paymentMethodNonces = weakSelf.paymentMethodNonces;
                         };
-                        [self.errorAlerts addObject:errorAlert];
-                        [errorAlert showWithDismissalHandler:^{
-                            [self.errorAlerts removeObject:errorAlert];
-                        }];
+                        [errorAlert show];
                     }
                     return;
                 }
@@ -359,13 +348,10 @@
                 [self informDelegateDidAddPaymentInfo:tokenizedCard];
             }];
         } else {
-            BTDropInErrorAlert *errorAlert = [[BTDropInErrorAlert alloc] initWithPresentingViewController:self];
-            errorAlert.title = BTDropInLocalizedString(ERROR_SAVING_CARD_ALERT_TITLE);
-            errorAlert.message = BTDropInLocalizedString(ERROR_SAVING_CARD_MESSAGE);
-            [self.errorAlerts addObject:errorAlert];
-            [errorAlert showWithDismissalHandler:^{
-                [self.errorAlerts removeObject:errorAlert];
-            }];
+            BTDropInErrorAlert *alert = [[BTDropInErrorAlert alloc] initWithPresentingViewController:self];
+            alert.title = BTDropInLocalizedString(ERROR_SAVING_CARD_ALERT_TITLE);
+            alert.message = BTDropInLocalizedString(ERROR_SAVING_CARD_MESSAGE);
+            [alert show];
         }
     }
 }
@@ -602,21 +588,18 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
         if (error) {
-            BTDropInErrorAlert *errorAlert = [[BTDropInErrorAlert alloc] initWithPresentingViewController:self];
-            errorAlert.title = error.localizedDescription;
-            BTJSON *errorBody = error.userInfo[BTHTTPJSONResponseBodyKey];
-            errorAlert.message = [errorBody[@"error"][@"message"] asString];
-            errorAlert.cancelBlock = ^{
-                [self informDelegateDidCancel];
-                if (completionBlock) completionBlock();
-            };
-            errorAlert.retryBlock = ^{
-                [self fetchPaymentMethodsOnCompletion:completionBlock];
-            };
-            [self.errorAlerts addObject:errorAlert];
-            [errorAlert showWithDismissalHandler:^{
-                [self.errorAlerts removeObject:errorAlert];
-            }];
+             BTDropInErrorAlert *errorAlert = [[BTDropInErrorAlert alloc] initWithPresentingViewController:self];
+             errorAlert.title = error.localizedDescription;
+             BTJSON *errorBody = error.userInfo[BTHTTPJSONResponseBodyKey];
+             errorAlert.message = [errorBody[@"error"][@"message"] asString];
+             errorAlert.cancelBlock = ^{
+                 [self informDelegateDidCancel];
+                 if (completionBlock) completionBlock();
+             };
+             errorAlert.retryBlock = ^{
+                 [self fetchPaymentMethodsOnCompletion:completionBlock];
+             };
+             [errorAlert show];
         } else {
             self.paymentMethodNonces = [paymentMethodNonces copy];
             if (completionBlock) {
@@ -687,11 +670,8 @@
             // Use the paymentMethodNonces setter to update state
             self.paymentMethodNonces = self.paymentMethodNonces;
         };
-
-        [self.errorAlerts addObject:errorAlert];
-        [errorAlert showWithDismissalHandler:^{
-            [self.errorAlerts removeObject:errorAlert];
-        }];
+        
+        [errorAlert show];
     } else if (paymentMethodNonce) {
         NSMutableArray *newPaymentMethods = [NSMutableArray arrayWithArray:self.paymentMethodNonces];
         [newPaymentMethods insertObject:paymentMethodNonce atIndex:0];

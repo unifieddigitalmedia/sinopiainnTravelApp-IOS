@@ -2,9 +2,6 @@
 #import "BTDropInLocalizedString.h"
 
 @interface BTDropInErrorAlert () <UIAlertViewDelegate>
-
-@property (nonatomic, copy, nullable) void (^dismissalHandler)();
-
 @end
 
 @implementation BTDropInErrorAlert
@@ -18,10 +15,9 @@
 }
 
 
-- (void)showWithDismissalHandler:(void (^)())dismissalHandler {
+- (void)show {
     NSString *localizedOK = BTDropInLocalizedString(ERROR_ALERT_OK_BUTTON_TEXT);
     NSString *localizedCancel = BTDropInLocalizedString(ERROR_ALERT_CANCEL_BUTTON_TEXT);
-    self.dismissalHandler = dismissalHandler;
 
     if ([UIAlertController class]) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:self.title message:self.message preferredStyle:UIAlertControllerStyleAlert];
@@ -32,9 +28,6 @@
                                                               if (self.cancelBlock) {
                                                                   self.cancelBlock();
                                                               }
-                                                              if (self.dismissalHandler) {
-                                                                  self.dismissalHandler();
-                                                              }
                                                           }]];
         if (self.retryBlock) {
             [alertController addAction:[UIAlertAction actionWithTitle:BTDropInLocalizedString(ERROR_ALERT_TRY_AGAIN_BUTTON_TEXT)
@@ -42,9 +35,6 @@
                                                               handler:^(__unused UIAlertAction *action) {
                 if (self.retryBlock) {
                     self.retryBlock();
-                }
-                if (self.dismissalHandler) {
-                    self.dismissalHandler();
                 }
             }]];
         }
@@ -78,7 +68,6 @@
     } else if (buttonIndex == 1 && self.retryBlock) {
         self.retryBlock();
     }
-    self.dismissalHandler();
 }
 #pragma clang diagnostic pop
 

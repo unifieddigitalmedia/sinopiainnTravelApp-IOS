@@ -95,9 +95,7 @@
     }
 
     // concat nonce and cipher for signing
-    NSData *encryptedBlob = [NSData dataWithBytes:cipherData length:dataMoved];
-    free(cipherData);
-    cipherData = NULL;
+    NSData *encryptedBlob = [NSData dataWithBytesNoCopy:cipherData length:dataMoved freeWhenDone:YES];
     NSMutableData *signData = [NSMutableData dataWithCapacity:encryptedBlob.length + nonce.length];
     [signData appendData:nonce];
     [signData appendData:encryptedBlob];
@@ -180,9 +178,7 @@
         plainText = NULL;
         return nil;
     }
-    resultData = [NSData dataWithBytes:plainText length:dataMoved];
-    free(plainText);
-    plainText = NULL;
+    resultData = [NSData dataWithBytesNoCopy:plainText length:dataMoved freeWhenDone:YES];
     return resultData;
 }
 
@@ -238,11 +234,8 @@
         free(cipherText);
         return nil;
     }
-
-    NSData *resultData = [NSData dataWithBytes:cipherText length:cipherTextLen];
-    free(cipherText);
-    cipherText = NULL;
-    return resultData;
+    
+    return [NSData dataWithBytesNoCopy:cipherText length:cipherTextLen freeWhenDone:YES];
 }
 
 @end

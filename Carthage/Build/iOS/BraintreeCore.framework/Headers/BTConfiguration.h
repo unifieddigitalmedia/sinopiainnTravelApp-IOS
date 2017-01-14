@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Undesignated initializers (do not use)
 
-- (instancetype)init __attribute__((unavailable("Please use initWithJSON: instead.")));
+- (nullable instancetype)init __attribute__((unavailable("Please use initWithJSON: instead.")));
 
 /// Returns true if the corresponding beta flag is set
 /// Otherwise returns false
