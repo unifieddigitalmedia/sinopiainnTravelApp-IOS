@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2122DF5D1BB95E5CDAF12C7D /* libPods-SinopiaInnTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A728CFBE49BADCB63A5B9 /* libPods-SinopiaInnTests.a */; };
 		6590354F1E2B8CD30059DD8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590354E1E2B8CD30059DD8F /* main.m */; };
 		659035521E2B8CD30059DD8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659035511E2B8CD30059DD8F /* AppDelegate.m */; };
 		659035551E2B8CD30059DD8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659035541E2B8CD30059DD8F /* ViewController.m */; };
@@ -198,6 +199,73 @@
 		659036F31E2B8E6F0059DD8F /* guestContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659036F21E2B8E6F0059DD8F /* guestContainerViewController.m */; };
 		659036F61E2B8E930059DD8F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659036F51E2B8E930059DD8F /* LoginViewController.m */; };
 		659036F91E2B8EA90059DD8F /* checkedinguestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 659036F81E2B8EA90059DD8F /* checkedinguestContainer.m */; };
+		659036FD1E2BA7100059DD8F /* optionPageD.m in Sources */ = {isa = PBXBuildFile; fileRef = 659036FC1E2BA7100059DD8F /* optionPageD.m */; };
+		659037001E2BA71E0059DD8F /* optionPageC.m in Sources */ = {isa = PBXBuildFile; fileRef = 659036FF1E2BA71E0059DD8F /* optionPageC.m */; };
+		659037031E2BA72F0059DD8F /* optionPageB.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037021E2BA72F0059DD8F /* optionPageB.m */; };
+		659037061E2BA7470059DD8F /* reservationPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037051E2BA7470059DD8F /* reservationPage.m */; };
+		659037091E2BA7590059DD8F /* receptionPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037081E2BA7590059DD8F /* receptionPage.m */; };
+		6590370C1E2BA7660059DD8F /* optionsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590370B1E2BA7660059DD8F /* optionsPage.m */; };
+		6590370F1E2BA7740059DD8F /* personaldetailsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590370E1E2BA7740059DD8F /* personaldetailsPage.m */; };
+		659037121E2BA7810059DD8F /* billPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037111E2BA7810059DD8F /* billPage.m */; };
+		659037151E2BA78F0059DD8F /* travelplannerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037141E2BA78F0059DD8F /* travelplannerPage.m */; };
+		659037181E2BA79D0059DD8F /* recipesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037171E2BA79D0059DD8F /* recipesPage.m */; };
+		6590371B1E2BA7A90059DD8F /* travelGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590371A1E2BA7A90059DD8F /* travelGuide.m */; };
+		6590371E1E2BA7BD0059DD8F /* itemDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590371D1E2BA7BD0059DD8F /* itemDescription.m */; };
+		659037211E2BA7CD0059DD8F /* placeDescriptionpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037201E2BA7CD0059DD8F /* placeDescriptionpage.m */; };
+		659037241E2BA7E70059DD8F /* miscData.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037231E2BA7E70059DD8F /* miscData.m */; };
+		659037271E2BA7F60059DD8F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037261E2BA7F60059DD8F /* MapViewController.m */; };
+		6590372A1E2BA8070059DD8F /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037291E2BA8070059DD8F /* ContactTableViewController.m */; };
+		6590372F1E2BB3E70059DD8F /* BraintreeCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590372B1E2BB3E70059DD8F /* BraintreeCard.framework */; };
+		659037301E2BB3E70059DD8F /* BraintreeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590372C1E2BB3E70059DD8F /* BraintreeCore.framework */; };
+		659037311E2BB3E70059DD8F /* BraintreeDropIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590372D1E2BB3E70059DD8F /* BraintreeDropIn.framework */; };
+		659037321E2BB3E70059DD8F /* BraintreeUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590372E1E2BB3E70059DD8F /* BraintreeUIKit.framework */; };
+		6590373E1E2BBC890059DD8F /* BraintreeApplePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590373D1E2BBC890059DD8F /* BraintreeApplePay.framework */; };
+		659037401E2BD1C30059DD8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590373F1E2BD1C30059DD8F /* QuartzCore.framework */; };
+		659037421E2BD1D30059DD8F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659037411E2BD1D30059DD8F /* ImageIO.framework */; };
+		659037441E2BD1DD0059DD8F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659037431E2BD1DD0059DD8F /* MessageUI.framework */; };
+		6590374F1E2BD6530059DD8F /* PDF in Resources */ = {isa = PBXBuildFile; fileRef = 6590374E1E2BD6530059DD8F /* PDF */; };
+		659037501E2BD7040059DD8F /* PDF in Sources */ = {isa = PBXBuildFile; fileRef = 6590374E1E2BD6530059DD8F /* PDF */; };
+		6590375A1E2BD7400059DD8F /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037511E2BD73F0059DD8F /* CGPDFDocument.m */; };
+		6590375B1E2BD7400059DD8F /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037521E2BD73F0059DD8F /* ReaderConstants.m */; };
+		6590375C1E2BD7400059DD8F /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037531E2BD73F0059DD8F /* ReaderContentPage.m */; };
+		6590375D1E2BD7400059DD8F /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037541E2BD73F0059DD8F /* ReaderContentTile.m */; };
+		6590375E1E2BD7400059DD8F /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037551E2BD73F0059DD8F /* ReaderContentView.m */; };
+		6590375F1E2BD7400059DD8F /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037561E2BD73F0059DD8F /* ReaderDocument.m */; };
+		659037601E2BD7400059DD8F /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037571E2BD7400059DD8F /* ReaderDocumentOutline.m */; };
+		659037611E2BD7400059DD8F /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037581E2BD7400059DD8F /* ReaderMainPagebar.m */; };
+		659037621E2BD7400059DD8F /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037591E2BD7400059DD8F /* ReaderMainToolbar.m */; };
+		6590376D1E2BD75D0059DD8F /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037631E2BD75D0059DD8F /* ReaderThumbFetch.m */; };
+		6590376E1E2BD75D0059DD8F /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037641E2BD75D0059DD8F /* ReaderThumbQueue.m */; };
+		6590376F1E2BD75D0059DD8F /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037651E2BD75D0059DD8F /* ReaderThumbRender.m */; };
+		659037701E2BD75D0059DD8F /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037661E2BD75D0059DD8F /* ReaderThumbRequest.m */; };
+		659037711E2BD75D0059DD8F /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037671E2BD75D0059DD8F /* ReaderThumbsView.m */; };
+		659037721E2BD75D0059DD8F /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037681E2BD75D0059DD8F /* ReaderThumbView.m */; };
+		659037731E2BD75D0059DD8F /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659037691E2BD75D0059DD8F /* ReaderViewController.m */; };
+		659037741E2BD75D0059DD8F /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590376A1E2BD75D0059DD8F /* ThumbsMainToolbar.m */; };
+		659037751E2BD75D0059DD8F /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590376B1E2BD75D0059DD8F /* ThumbsViewController.m */; };
+		659037761E2BD75D0059DD8F /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590376C1E2BD75D0059DD8F /* UIXToolbarView.m */; };
+		659037811E2BD79E0059DD8F /* CGPDFDocument.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037771E2BD79E0059DD8F /* CGPDFDocument.h */; };
+		659037821E2BD79E0059DD8F /* ReaderConstants.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037781E2BD79E0059DD8F /* ReaderConstants.h */; };
+		659037831E2BD79E0059DD8F /* ReaderContentPage.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037791E2BD79E0059DD8F /* ReaderContentPage.h */; };
+		659037841E2BD79E0059DD8F /* ReaderContentTile.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377A1E2BD79E0059DD8F /* ReaderContentTile.h */; };
+		659037851E2BD79E0059DD8F /* ReaderContentView.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377B1E2BD79E0059DD8F /* ReaderContentView.h */; };
+		659037861E2BD79E0059DD8F /* ReaderDocument.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377C1E2BD79E0059DD8F /* ReaderDocument.h */; };
+		659037871E2BD79E0059DD8F /* ReaderDocumentOutline.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377D1E2BD79E0059DD8F /* ReaderDocumentOutline.h */; };
+		659037881E2BD79E0059DD8F /* ReaderMainPagebar.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377E1E2BD79E0059DD8F /* ReaderMainPagebar.h */; };
+		659037891E2BD79E0059DD8F /* ReaderMainToolbar.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590377F1E2BD79E0059DD8F /* ReaderMainToolbar.h */; };
+		6590378A1E2BD79E0059DD8F /* ReaderThumbCache.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037801E2BD79E0059DD8F /* ReaderThumbCache.h */; };
+		659037941E2BD7C10059DD8F /* ReaderThumbQueue.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590378B1E2BD7C10059DD8F /* ReaderThumbQueue.h */; };
+		659037951E2BD7C10059DD8F /* ReaderThumbRender.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590378C1E2BD7C10059DD8F /* ReaderThumbRender.h */; };
+		659037961E2BD7C10059DD8F /* ReaderThumbRequest.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590378D1E2BD7C10059DD8F /* ReaderThumbRequest.h */; };
+		659037971E2BD7C10059DD8F /* ReaderThumbsView.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590378E1E2BD7C10059DD8F /* ReaderThumbsView.h */; };
+		659037981E2BD7C10059DD8F /* ReaderThumbView.h in Resources */ = {isa = PBXBuildFile; fileRef = 6590378F1E2BD7C10059DD8F /* ReaderThumbView.h */; };
+		659037991E2BD7C10059DD8F /* ReaderViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037901E2BD7C10059DD8F /* ReaderViewController.h */; };
+		6590379A1E2BD7C10059DD8F /* ThumbsMainToolbar.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037911E2BD7C10059DD8F /* ThumbsMainToolbar.h */; };
+		6590379B1E2BD7C10059DD8F /* ThumbsViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037921E2BD7C10059DD8F /* ThumbsViewController.h */; };
+		6590379C1E2BD7C10059DD8F /* UIXToolbarView.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037931E2BD7C10059DD8F /* UIXToolbarView.h */; };
+		6590379F1E2BD8A10059DD8F /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */; };
+		96552BA8CAD2AC7828B8D70E /* libPods-SinopiaInn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B98F771D07D215965781CD5 /* libPods-SinopiaInn.a */; };
+		9A87C5320A5C8A4D5BA3CD26 /* libPods-SinopiaInnUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85621A1B9D1C2F2D80197DC8 /* libPods-SinopiaInnUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +286,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CC40182DAAFD2FD6ED8C918 /* Pods-SinopiaInn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInn.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInn/Pods-SinopiaInn.release.xcconfig"; sourceTree = "<group>"; };
+		2AB5E7073F7030C9641E6837 /* Pods-SinopiaInnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInnTests/Pods-SinopiaInnTests.release.xcconfig"; sourceTree = "<group>"; };
+		6518F39E9D5B20DE62CBE742 /* Pods-SinopiaInnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInnTests/Pods-SinopiaInnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6590354A1E2B8CD20059DD8F /* SinopiaInn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinopiaInn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6590354E1E2B8CD30059DD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		659035501E2B8CD30059DD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -420,6 +491,94 @@
 		659036F51E2B8E930059DD8F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		659036F71E2B8EA90059DD8F /* checkedinguestContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkedinguestContainer.h; sourceTree = "<group>"; };
 		659036F81E2B8EA90059DD8F /* checkedinguestContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkedinguestContainer.m; sourceTree = "<group>"; };
+		659036FA1E2BA66F0059DD8F /* checkedInProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checkedInProtocol.h; sourceTree = "<group>"; };
+		659036FB1E2BA7100059DD8F /* optionPageD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionPageD.h; sourceTree = "<group>"; };
+		659036FC1E2BA7100059DD8F /* optionPageD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionPageD.m; sourceTree = "<group>"; };
+		659036FE1E2BA71E0059DD8F /* optionPageC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionPageC.h; sourceTree = "<group>"; };
+		659036FF1E2BA71E0059DD8F /* optionPageC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionPageC.m; sourceTree = "<group>"; };
+		659037011E2BA72F0059DD8F /* optionPageB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionPageB.h; sourceTree = "<group>"; };
+		659037021E2BA72F0059DD8F /* optionPageB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionPageB.m; sourceTree = "<group>"; };
+		659037041E2BA7470059DD8F /* reservationPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reservationPage.h; sourceTree = "<group>"; };
+		659037051E2BA7470059DD8F /* reservationPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reservationPage.m; sourceTree = "<group>"; };
+		659037071E2BA7590059DD8F /* receptionPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = receptionPage.h; sourceTree = "<group>"; };
+		659037081E2BA7590059DD8F /* receptionPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = receptionPage.m; sourceTree = "<group>"; };
+		6590370A1E2BA7660059DD8F /* optionsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optionsPage.h; sourceTree = "<group>"; };
+		6590370B1E2BA7660059DD8F /* optionsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = optionsPage.m; sourceTree = "<group>"; };
+		6590370D1E2BA7740059DD8F /* personaldetailsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personaldetailsPage.h; sourceTree = "<group>"; };
+		6590370E1E2BA7740059DD8F /* personaldetailsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personaldetailsPage.m; sourceTree = "<group>"; };
+		659037101E2BA7810059DD8F /* billPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = billPage.h; sourceTree = "<group>"; };
+		659037111E2BA7810059DD8F /* billPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = billPage.m; sourceTree = "<group>"; };
+		659037131E2BA78F0059DD8F /* travelplannerPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = travelplannerPage.h; sourceTree = "<group>"; };
+		659037141E2BA78F0059DD8F /* travelplannerPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = travelplannerPage.m; sourceTree = "<group>"; };
+		659037161E2BA79D0059DD8F /* recipesPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recipesPage.h; sourceTree = "<group>"; };
+		659037171E2BA79D0059DD8F /* recipesPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recipesPage.m; sourceTree = "<group>"; };
+		659037191E2BA7A90059DD8F /* travelGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = travelGuide.h; sourceTree = "<group>"; };
+		6590371A1E2BA7A90059DD8F /* travelGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = travelGuide.m; sourceTree = "<group>"; };
+		6590371C1E2BA7BD0059DD8F /* itemDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemDescription.h; sourceTree = "<group>"; };
+		6590371D1E2BA7BD0059DD8F /* itemDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemDescription.m; sourceTree = "<group>"; };
+		6590371F1E2BA7CD0059DD8F /* placeDescriptionpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = placeDescriptionpage.h; sourceTree = "<group>"; };
+		659037201E2BA7CD0059DD8F /* placeDescriptionpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = placeDescriptionpage.m; sourceTree = "<group>"; };
+		659037221E2BA7E70059DD8F /* miscData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miscData.h; sourceTree = "<group>"; };
+		659037231E2BA7E70059DD8F /* miscData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = miscData.m; sourceTree = "<group>"; };
+		659037251E2BA7F60059DD8F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		659037261E2BA7F60059DD8F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		659037281E2BA8070059DD8F /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewController.h; sourceTree = "<group>"; };
+		659037291E2BA8070059DD8F /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewController.m; sourceTree = "<group>"; };
+		6590372B1E2BB3E70059DD8F /* BraintreeCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeCard.framework; path = Carthage/Build/iOS/BraintreeCard.framework; sourceTree = "<group>"; };
+		6590372C1E2BB3E70059DD8F /* BraintreeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeCore.framework; path = Carthage/Build/iOS/BraintreeCore.framework; sourceTree = "<group>"; };
+		6590372D1E2BB3E70059DD8F /* BraintreeDropIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeDropIn.framework; path = Carthage/Build/iOS/BraintreeDropIn.framework; sourceTree = "<group>"; };
+		6590372E1E2BB3E70059DD8F /* BraintreeUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeUIKit.framework; path = Carthage/Build/iOS/BraintreeUIKit.framework; sourceTree = "<group>"; };
+		6590373D1E2BBC890059DD8F /* BraintreeApplePay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeApplePay.framework; path = Carthage/Build/iOS/BraintreeApplePay.framework; sourceTree = "<group>"; };
+		6590373F1E2BD1C30059DD8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		659037411E2BD1D30059DD8F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		659037431E2BD1DD0059DD8F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6590374E1E2BD6530059DD8F /* PDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PDF; sourceTree = "<group>"; };
+		659037511E2BD73F0059DD8F /* CGPDFDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = SinopiaInn/PDF/Sources/CGPDFDocument.m; sourceTree = "<group>"; };
+		659037521E2BD73F0059DD8F /* ReaderConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderConstants.m; path = SinopiaInn/PDF/Sources/ReaderConstants.m; sourceTree = "<group>"; };
+		659037531E2BD73F0059DD8F /* ReaderContentPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderContentPage.m; path = SinopiaInn/PDF/Sources/ReaderContentPage.m; sourceTree = "<group>"; };
+		659037541E2BD73F0059DD8F /* ReaderContentTile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderContentTile.m; path = SinopiaInn/PDF/Sources/ReaderContentTile.m; sourceTree = "<group>"; };
+		659037551E2BD73F0059DD8F /* ReaderContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderContentView.m; path = SinopiaInn/PDF/Sources/ReaderContentView.m; sourceTree = "<group>"; };
+		659037561E2BD73F0059DD8F /* ReaderDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderDocument.m; path = SinopiaInn/PDF/Sources/ReaderDocument.m; sourceTree = "<group>"; };
+		659037571E2BD7400059DD8F /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderDocumentOutline.m; path = SinopiaInn/PDF/Sources/ReaderDocumentOutline.m; sourceTree = "<group>"; };
+		659037581E2BD7400059DD8F /* ReaderMainPagebar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderMainPagebar.m; path = SinopiaInn/PDF/Sources/ReaderMainPagebar.m; sourceTree = "<group>"; };
+		659037591E2BD7400059DD8F /* ReaderMainToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderMainToolbar.m; path = SinopiaInn/PDF/Sources/ReaderMainToolbar.m; sourceTree = "<group>"; };
+		659037631E2BD75D0059DD8F /* ReaderThumbFetch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbFetch.m; path = SinopiaInn/PDF/Sources/ReaderThumbFetch.m; sourceTree = "<group>"; };
+		659037641E2BD75D0059DD8F /* ReaderThumbQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbQueue.m; path = SinopiaInn/PDF/Sources/ReaderThumbQueue.m; sourceTree = "<group>"; };
+		659037651E2BD75D0059DD8F /* ReaderThumbRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRender.m; path = SinopiaInn/PDF/Sources/ReaderThumbRender.m; sourceTree = "<group>"; };
+		659037661E2BD75D0059DD8F /* ReaderThumbRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = SinopiaInn/PDF/Sources/ReaderThumbRequest.m; sourceTree = "<group>"; };
+		659037671E2BD75D0059DD8F /* ReaderThumbsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbsView.m; path = SinopiaInn/PDF/Sources/ReaderThumbsView.m; sourceTree = "<group>"; };
+		659037681E2BD75D0059DD8F /* ReaderThumbView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbView.m; path = SinopiaInn/PDF/Sources/ReaderThumbView.m; sourceTree = "<group>"; };
+		659037691E2BD75D0059DD8F /* ReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = SinopiaInn/PDF/Sources/ReaderViewController.m; sourceTree = "<group>"; };
+		6590376A1E2BD75D0059DD8F /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThumbsMainToolbar.m; path = SinopiaInn/PDF/Sources/ThumbsMainToolbar.m; sourceTree = "<group>"; };
+		6590376B1E2BD75D0059DD8F /* ThumbsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = SinopiaInn/PDF/Sources/ThumbsViewController.m; sourceTree = "<group>"; };
+		6590376C1E2BD75D0059DD8F /* UIXToolbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIXToolbarView.m; path = SinopiaInn/PDF/Sources/UIXToolbarView.m; sourceTree = "<group>"; };
+		659037771E2BD79E0059DD8F /* CGPDFDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = SinopiaInn/PDF/Sources/CGPDFDocument.h; sourceTree = "<group>"; };
+		659037781E2BD79E0059DD8F /* ReaderConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderConstants.h; path = SinopiaInn/PDF/Sources/ReaderConstants.h; sourceTree = "<group>"; };
+		659037791E2BD79E0059DD8F /* ReaderContentPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = SinopiaInn/PDF/Sources/ReaderContentPage.h; sourceTree = "<group>"; };
+		6590377A1E2BD79E0059DD8F /* ReaderContentTile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderContentTile.h; path = SinopiaInn/PDF/Sources/ReaderContentTile.h; sourceTree = "<group>"; };
+		6590377B1E2BD79E0059DD8F /* ReaderContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = SinopiaInn/PDF/Sources/ReaderContentView.h; sourceTree = "<group>"; };
+		6590377C1E2BD79E0059DD8F /* ReaderDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderDocument.h; path = SinopiaInn/PDF/Sources/ReaderDocument.h; sourceTree = "<group>"; };
+		6590377D1E2BD79E0059DD8F /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = SinopiaInn/PDF/Sources/ReaderDocumentOutline.h; sourceTree = "<group>"; };
+		6590377E1E2BD79E0059DD8F /* ReaderMainPagebar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderMainPagebar.h; path = SinopiaInn/PDF/Sources/ReaderMainPagebar.h; sourceTree = "<group>"; };
+		6590377F1E2BD79E0059DD8F /* ReaderMainToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderMainToolbar.h; path = SinopiaInn/PDF/Sources/ReaderMainToolbar.h; sourceTree = "<group>"; };
+		659037801E2BD79E0059DD8F /* ReaderThumbCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = SinopiaInn/PDF/Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
+		6590378B1E2BD7C10059DD8F /* ReaderThumbQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbQueue.h; path = SinopiaInn/PDF/Sources/ReaderThumbQueue.h; sourceTree = "<group>"; };
+		6590378C1E2BD7C10059DD8F /* ReaderThumbRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = SinopiaInn/PDF/Sources/ReaderThumbRender.h; sourceTree = "<group>"; };
+		6590378D1E2BD7C10059DD8F /* ReaderThumbRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = SinopiaInn/PDF/Sources/ReaderThumbRequest.h; sourceTree = "<group>"; };
+		6590378E1E2BD7C10059DD8F /* ReaderThumbsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbsView.h; path = SinopiaInn/PDF/Sources/ReaderThumbsView.h; sourceTree = "<group>"; };
+		6590378F1E2BD7C10059DD8F /* ReaderThumbView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbView.h; path = SinopiaInn/PDF/Sources/ReaderThumbView.h; sourceTree = "<group>"; };
+		659037901E2BD7C10059DD8F /* ReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = SinopiaInn/PDF/Sources/ReaderViewController.h; sourceTree = "<group>"; };
+		659037911E2BD7C10059DD8F /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = SinopiaInn/PDF/Sources/ThumbsMainToolbar.h; sourceTree = "<group>"; };
+		659037921E2BD7C10059DD8F /* ThumbsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThumbsViewController.h; path = SinopiaInn/PDF/Sources/ThumbsViewController.h; sourceTree = "<group>"; };
+		659037931E2BD7C10059DD8F /* UIXToolbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = SinopiaInn/PDF/Sources/UIXToolbarView.h; sourceTree = "<group>"; };
+		6590379D1E2BD7FE0059DD8F /* ReaderThumbCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = SinopiaInn/PDF/Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
+		6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = SinopiaInn/PDF/Sources/ReaderThumbCache.m; sourceTree = "<group>"; };
+		6B725F26CA4803328D304991 /* Pods-SinopiaInnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInnUITests/Pods-SinopiaInnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		755A728CFBE49BADCB63A5B9 /* libPods-SinopiaInnTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinopiaInnTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B98F771D07D215965781CD5 /* libPods-SinopiaInn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinopiaInn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85621A1B9D1C2F2D80197DC8 /* libPods-SinopiaInnUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinopiaInnUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		983777E00BBFA54EA6B7E4E3 /* Pods-SinopiaInnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInnUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInnUITests/Pods-SinopiaInnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A15F1E0828518D4DDF268D /* Pods-SinopiaInn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInn/Pods-SinopiaInn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +586,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659037441E2BD1DD0059DD8F /* MessageUI.framework in Frameworks */,
+				659037421E2BD1D30059DD8F /* ImageIO.framework in Frameworks */,
+				659037401E2BD1C30059DD8F /* QuartzCore.framework in Frameworks */,
+				96552BA8CAD2AC7828B8D70E /* libPods-SinopiaInn.a in Frameworks */,
+				6590372F1E2BB3E70059DD8F /* BraintreeCard.framework in Frameworks */,
+				659037301E2BB3E70059DD8F /* BraintreeCore.framework in Frameworks */,
+				659037311E2BB3E70059DD8F /* BraintreeDropIn.framework in Frameworks */,
+				659037321E2BB3E70059DD8F /* BraintreeUIKit.framework in Frameworks */,
+				6590373E1E2BBC890059DD8F /* BraintreeApplePay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +602,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2122DF5D1BB95E5CDAF12C7D /* libPods-SinopiaInnTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,19 +610,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A87C5320A5C8A4D5BA3CD26 /* libPods-SinopiaInnUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ABF21364AAE746317350C8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5A15F1E0828518D4DDF268D /* Pods-SinopiaInn.debug.xcconfig */,
+				1CC40182DAAFD2FD6ED8C918 /* Pods-SinopiaInn.release.xcconfig */,
+				6518F39E9D5B20DE62CBE742 /* Pods-SinopiaInnTests.debug.xcconfig */,
+				2AB5E7073F7030C9641E6837 /* Pods-SinopiaInnTests.release.xcconfig */,
+				983777E00BBFA54EA6B7E4E3 /* Pods-SinopiaInnUITests.debug.xcconfig */,
+				6B725F26CA4803328D304991 /* Pods-SinopiaInnUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		659035411E2B8CD20059DD8F = {
 			isa = PBXGroup;
 			children = (
+				6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */,
+				6590379D1E2BD7FE0059DD8F /* ReaderThumbCache.h */,
+				6590378B1E2BD7C10059DD8F /* ReaderThumbQueue.h */,
+				6590378C1E2BD7C10059DD8F /* ReaderThumbRender.h */,
+				6590378D1E2BD7C10059DD8F /* ReaderThumbRequest.h */,
+				6590378E1E2BD7C10059DD8F /* ReaderThumbsView.h */,
+				6590378F1E2BD7C10059DD8F /* ReaderThumbView.h */,
+				659037901E2BD7C10059DD8F /* ReaderViewController.h */,
+				659037911E2BD7C10059DD8F /* ThumbsMainToolbar.h */,
+				659037921E2BD7C10059DD8F /* ThumbsViewController.h */,
+				659037931E2BD7C10059DD8F /* UIXToolbarView.h */,
+				659037771E2BD79E0059DD8F /* CGPDFDocument.h */,
+				659037781E2BD79E0059DD8F /* ReaderConstants.h */,
+				659037791E2BD79E0059DD8F /* ReaderContentPage.h */,
+				6590377A1E2BD79E0059DD8F /* ReaderContentTile.h */,
+				6590377B1E2BD79E0059DD8F /* ReaderContentView.h */,
+				6590377C1E2BD79E0059DD8F /* ReaderDocument.h */,
+				6590377D1E2BD79E0059DD8F /* ReaderDocumentOutline.h */,
+				6590377E1E2BD79E0059DD8F /* ReaderMainPagebar.h */,
+				6590377F1E2BD79E0059DD8F /* ReaderMainToolbar.h */,
+				659037801E2BD79E0059DD8F /* ReaderThumbCache.h */,
+				659037631E2BD75D0059DD8F /* ReaderThumbFetch.m */,
+				659037641E2BD75D0059DD8F /* ReaderThumbQueue.m */,
+				659037651E2BD75D0059DD8F /* ReaderThumbRender.m */,
+				659037661E2BD75D0059DD8F /* ReaderThumbRequest.m */,
+				659037671E2BD75D0059DD8F /* ReaderThumbsView.m */,
+				659037681E2BD75D0059DD8F /* ReaderThumbView.m */,
+				659037691E2BD75D0059DD8F /* ReaderViewController.m */,
+				6590376A1E2BD75D0059DD8F /* ThumbsMainToolbar.m */,
+				6590376B1E2BD75D0059DD8F /* ThumbsViewController.m */,
+				6590376C1E2BD75D0059DD8F /* UIXToolbarView.m */,
+				659037511E2BD73F0059DD8F /* CGPDFDocument.m */,
+				659037521E2BD73F0059DD8F /* ReaderConstants.m */,
+				659037531E2BD73F0059DD8F /* ReaderContentPage.m */,
+				659037541E2BD73F0059DD8F /* ReaderContentTile.m */,
+				659037551E2BD73F0059DD8F /* ReaderContentView.m */,
+				659037561E2BD73F0059DD8F /* ReaderDocument.m */,
+				659037571E2BD7400059DD8F /* ReaderDocumentOutline.m */,
+				659037581E2BD7400059DD8F /* ReaderMainPagebar.m */,
+				659037591E2BD7400059DD8F /* ReaderMainToolbar.m */,
 				6590354C1E2B8CD20059DD8F /* SinopiaInn */,
 				659035661E2B8CD30059DD8F /* SinopiaInnTests */,
 				659035711E2B8CD30059DD8F /* SinopiaInnUITests */,
 				6590354B1E2B8CD20059DD8F /* Products */,
+				1ABF21364AAE746317350C8A /* Pods */,
+				D74F470D492419CF192AEBD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -470,6 +695,7 @@
 		6590354C1E2B8CD20059DD8F /* SinopiaInn */ = {
 			isa = PBXGroup;
 			children = (
+				6590374E1E2BD6530059DD8F /* PDF */,
 				659035801E2B8D810059DD8F /* Images */,
 				659035501E2B8CD30059DD8F /* AppDelegate.h */,
 				659035511E2B8CD30059DD8F /* AppDelegate.m */,
@@ -481,6 +707,39 @@
 				659036F51E2B8E930059DD8F /* LoginViewController.m */,
 				659036F11E2B8E6F0059DD8F /* guestContainerViewController.h */,
 				659036F21E2B8E6F0059DD8F /* guestContainerViewController.m */,
+				659037281E2BA8070059DD8F /* ContactTableViewController.h */,
+				659037291E2BA8070059DD8F /* ContactTableViewController.m */,
+				659037251E2BA7F60059DD8F /* MapViewController.h */,
+				659037261E2BA7F60059DD8F /* MapViewController.m */,
+				659037221E2BA7E70059DD8F /* miscData.h */,
+				659037231E2BA7E70059DD8F /* miscData.m */,
+				6590371F1E2BA7CD0059DD8F /* placeDescriptionpage.h */,
+				659037201E2BA7CD0059DD8F /* placeDescriptionpage.m */,
+				6590371C1E2BA7BD0059DD8F /* itemDescription.h */,
+				6590371D1E2BA7BD0059DD8F /* itemDescription.m */,
+				659037191E2BA7A90059DD8F /* travelGuide.h */,
+				6590371A1E2BA7A90059DD8F /* travelGuide.m */,
+				659037161E2BA79D0059DD8F /* recipesPage.h */,
+				659037171E2BA79D0059DD8F /* recipesPage.m */,
+				659037131E2BA78F0059DD8F /* travelplannerPage.h */,
+				659037141E2BA78F0059DD8F /* travelplannerPage.m */,
+				659037101E2BA7810059DD8F /* billPage.h */,
+				659037111E2BA7810059DD8F /* billPage.m */,
+				6590370D1E2BA7740059DD8F /* personaldetailsPage.h */,
+				6590370E1E2BA7740059DD8F /* personaldetailsPage.m */,
+				6590370A1E2BA7660059DD8F /* optionsPage.h */,
+				6590370B1E2BA7660059DD8F /* optionsPage.m */,
+				659037071E2BA7590059DD8F /* receptionPage.h */,
+				659037081E2BA7590059DD8F /* receptionPage.m */,
+				659037041E2BA7470059DD8F /* reservationPage.h */,
+				659037051E2BA7470059DD8F /* reservationPage.m */,
+				659037011E2BA72F0059DD8F /* optionPageB.h */,
+				659037021E2BA72F0059DD8F /* optionPageB.m */,
+				659036FE1E2BA71E0059DD8F /* optionPageC.h */,
+				659036FF1E2BA71E0059DD8F /* optionPageC.m */,
+				659036FB1E2BA7100059DD8F /* optionPageD.h */,
+				659036FC1E2BA7100059DD8F /* optionPageD.m */,
+				659036FA1E2BA66F0059DD8F /* checkedInProtocol.h */,
 				659035561E2B8CD30059DD8F /* Main.storyboard */,
 				659035591E2B8CD30059DD8F /* Assets.xcassets */,
 				6590355B1E2B8CD30059DD8F /* LaunchScreen.storyboard */,
@@ -703,6 +962,24 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D74F470D492419CF192AEBD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659037431E2BD1DD0059DD8F /* MessageUI.framework */,
+				659037411E2BD1D30059DD8F /* ImageIO.framework */,
+				6590373F1E2BD1C30059DD8F /* QuartzCore.framework */,
+				6590373D1E2BBC890059DD8F /* BraintreeApplePay.framework */,
+				6590372B1E2BB3E70059DD8F /* BraintreeCard.framework */,
+				6590372C1E2BB3E70059DD8F /* BraintreeCore.framework */,
+				6590372D1E2BB3E70059DD8F /* BraintreeDropIn.framework */,
+				6590372E1E2BB3E70059DD8F /* BraintreeUIKit.framework */,
+				7B98F771D07D215965781CD5 /* libPods-SinopiaInn.a */,
+				755A728CFBE49BADCB63A5B9 /* libPods-SinopiaInnTests.a */,
+				85621A1B9D1C2F2D80197DC8 /* libPods-SinopiaInnUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -710,9 +987,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 659035771E2B8CD30059DD8F /* Build configuration list for PBXNativeTarget "SinopiaInn" */;
 			buildPhases = (
+				8B75ED4D1C49A138827061D0 /* [CP] Check Pods Manifest.lock */,
 				659035461E2B8CD20059DD8F /* Sources */,
 				659035471E2B8CD20059DD8F /* Frameworks */,
 				659035481E2B8CD20059DD8F /* Resources */,
+				E8D931AE9A809628E77794C5 /* [CP] Embed Pods Frameworks */,
+				173C965D66FC01426B627BDD /* [CP] Copy Pods Resources */,
+				659037331E2BB3F60059DD8F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -727,9 +1008,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6590357A1E2B8CD30059DD8F /* Build configuration list for PBXNativeTarget "SinopiaInnTests" */;
 			buildPhases = (
+				BB493E078CEF4133AB2B74F7 /* [CP] Check Pods Manifest.lock */,
 				6590355F1E2B8CD30059DD8F /* Sources */,
 				659035601E2B8CD30059DD8F /* Frameworks */,
 				659035611E2B8CD30059DD8F /* Resources */,
+				E9750A9660EAD0CE9D6AD4B3 /* [CP] Embed Pods Frameworks */,
+				43E06899C5FAD637CAEEDF3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -745,9 +1029,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6590357D1E2B8CD30059DD8F /* Build configuration list for PBXNativeTarget "SinopiaInnUITests" */;
 			buildPhases = (
+				CEF526331A96DA55373E16A1 /* [CP] Check Pods Manifest.lock */,
 				6590356A1E2B8CD30059DD8F /* Sources */,
 				6590356B1E2B8CD30059DD8F /* Frameworks */,
 				6590356C1E2B8CD30059DD8F /* Resources */,
+				65513AD65F85F7F382E78DCE /* [CP] Embed Pods Frameworks */,
+				D93DF261FEB7A7CA71DFED8D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -810,11 +1097,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6590378A1E2BD79E0059DD8F /* ReaderThumbCache.h in Resources */,
+				659037941E2BD7C10059DD8F /* ReaderThumbQueue.h in Resources */,
+				659037951E2BD7C10059DD8F /* ReaderThumbRender.h in Resources */,
+				659037961E2BD7C10059DD8F /* ReaderThumbRequest.h in Resources */,
+				659037971E2BD7C10059DD8F /* ReaderThumbsView.h in Resources */,
+				659037981E2BD7C10059DD8F /* ReaderThumbView.h in Resources */,
+				659037991E2BD7C10059DD8F /* ReaderViewController.h in Resources */,
+				6590379A1E2BD7C10059DD8F /* ThumbsMainToolbar.h in Resources */,
+				6590379B1E2BD7C10059DD8F /* ThumbsViewController.h in Resources */,
+				6590379C1E2BD7C10059DD8F /* UIXToolbarView.h in Resources */,
+				659037811E2BD79E0059DD8F /* CGPDFDocument.h in Resources */,
+				659037821E2BD79E0059DD8F /* ReaderConstants.h in Resources */,
+				659037831E2BD79E0059DD8F /* ReaderContentPage.h in Resources */,
+				659037841E2BD79E0059DD8F /* ReaderContentTile.h in Resources */,
+				659037851E2BD79E0059DD8F /* ReaderContentView.h in Resources */,
+				659037861E2BD79E0059DD8F /* ReaderDocument.h in Resources */,
+				659037871E2BD79E0059DD8F /* ReaderDocumentOutline.h in Resources */,
+				659037881E2BD79E0059DD8F /* ReaderMainPagebar.h in Resources */,
+				659037891E2BD79E0059DD8F /* ReaderMainToolbar.h in Resources */,
 				659036AF1E2B8DC70059DD8F /* ic_map.png in Resources */,
 				6590367D1E2B8DC70059DD8F /* ic_event_2x.png in Resources */,
 				659036BB1E2B8DC70059DD8F /* ic_person.png in Resources */,
 				659036CA1E2B8DC70059DD8F /* ic_restaurant.png in Resources */,
-				6590366F1E2B8DC70059DD8F /* ic_cloud_3x.png in Resources */,
 				659036791E2B8DC70059DD8F /* ic_date_range.png in Resources */,
 				659036BE1E2B8DC70059DD8F /* ic_photo_library.png in Resources */,
 				659036931E2B8DC70059DD8F /* ic_local_activity_3x.png in Resources */,
@@ -968,6 +1273,7 @@
 				659036B21E2B8DC70059DD8F /* ic_monetization_on.png in Resources */,
 				659036B71E2B8DC70059DD8F /* ic_people_outline_3x.png in Resources */,
 				659036831E2B8DC70059DD8F /* ic_favorite_2x.png in Resources */,
+				6590374F1E2BD6530059DD8F /* PDF in Resources */,
 				659036611E2B8DC70059DD8F /* ic_bookmark.png in Resources */,
 				659036701E2B8DC70059DD8F /* ic_cloud_queue_2x.png in Resources */,
 				659036F01E2B8DC70059DD8F /* sinopia_inn.png in Resources */,
@@ -988,6 +1294,7 @@
 				659036581E2B8DC70059DD8F /* ic_av_timer.png in Resources */,
 				6590367F1E2B8DC70059DD8F /* ic_event_seat_2x.png in Resources */,
 				659036901E2B8DC70059DD8F /* ic_hotel_3x.png in Resources */,
+				6590366F1E2B8DC70059DD8F /* ic_cloud_3x.png in Resources */,
 				659036DC1E2B8DC70059DD8F /* ic_star.png in Resources */,
 				659036691E2B8DC70059DD8F /* ic_card_travel_white.png in Resources */,
 				659036851E2B8DC70059DD8F /* ic_favorite.png in Resources */,
@@ -1012,17 +1319,210 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		173C965D66FC01426B627BDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInn/Pods-SinopiaInn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E06899C5FAD637CAEEDF3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInnTests/Pods-SinopiaInnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65513AD65F85F7F382E78DCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInnUITests/Pods-SinopiaInnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659037331E2BB3F60059DD8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BraintreeDropIn.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BraintreeUIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BraintreeCard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BraintreeCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BraintreeApplePay.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8B75ED4D1C49A138827061D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB493E078CEF4133AB2B74F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF526331A96DA55373E16A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D93DF261FEB7A7CA71DFED8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInnUITests/Pods-SinopiaInnUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D931AE9A809628E77794C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInn/Pods-SinopiaInn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9750A9660EAD0CE9D6AD4B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinopiaInnTests/Pods-SinopiaInnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		659035461E2B8CD20059DD8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6590379F1E2BD8A10059DD8F /* ReaderThumbCache.m in Sources */,
+				6590376D1E2BD75D0059DD8F /* ReaderThumbFetch.m in Sources */,
+				6590376E1E2BD75D0059DD8F /* ReaderThumbQueue.m in Sources */,
+				6590376F1E2BD75D0059DD8F /* ReaderThumbRender.m in Sources */,
+				659037701E2BD75D0059DD8F /* ReaderThumbRequest.m in Sources */,
+				659037711E2BD75D0059DD8F /* ReaderThumbsView.m in Sources */,
+				659037721E2BD75D0059DD8F /* ReaderThumbView.m in Sources */,
+				659037731E2BD75D0059DD8F /* ReaderViewController.m in Sources */,
+				659037741E2BD75D0059DD8F /* ThumbsMainToolbar.m in Sources */,
+				659037751E2BD75D0059DD8F /* ThumbsViewController.m in Sources */,
+				659037761E2BD75D0059DD8F /* UIXToolbarView.m in Sources */,
+				6590375A1E2BD7400059DD8F /* CGPDFDocument.m in Sources */,
+				6590375B1E2BD7400059DD8F /* ReaderConstants.m in Sources */,
+				6590375C1E2BD7400059DD8F /* ReaderContentPage.m in Sources */,
+				6590375D1E2BD7400059DD8F /* ReaderContentTile.m in Sources */,
+				6590375E1E2BD7400059DD8F /* ReaderContentView.m in Sources */,
+				6590375F1E2BD7400059DD8F /* ReaderDocument.m in Sources */,
+				659037601E2BD7400059DD8F /* ReaderDocumentOutline.m in Sources */,
+				659037611E2BD7400059DD8F /* ReaderMainPagebar.m in Sources */,
+				659037621E2BD7400059DD8F /* ReaderMainToolbar.m in Sources */,
+				659037501E2BD7040059DD8F /* PDF in Sources */,
+				659037181E2BA79D0059DD8F /* recipesPage.m in Sources */,
+				659037031E2BA72F0059DD8F /* optionPageB.m in Sources */,
 				659035551E2B8CD30059DD8F /* ViewController.m in Sources */,
-				659036F91E2B8EA90059DD8F /* checkedinguestContainer.m in Sources */,
+				659037001E2BA71E0059DD8F /* optionPageC.m in Sources */,
+				6590372A1E2BA8070059DD8F /* ContactTableViewController.m in Sources */,
+				659037271E2BA7F60059DD8F /* MapViewController.m in Sources */,
+				6590371E1E2BA7BD0059DD8F /* itemDescription.m in Sources */,
+				659037091E2BA7590059DD8F /* receptionPage.m in Sources */,
 				659035521E2B8CD30059DD8F /* AppDelegate.m in Sources */,
+				6590371B1E2BA7A90059DD8F /* travelGuide.m in Sources */,
+				6590370F1E2BA7740059DD8F /* personaldetailsPage.m in Sources */,
+				659036F91E2B8EA90059DD8F /* checkedinguestContainer.m in Sources */,
+				659037151E2BA78F0059DD8F /* travelplannerPage.m in Sources */,
+				659036FD1E2BA7100059DD8F /* optionPageD.m in Sources */,
 				6590354F1E2B8CD30059DD8F /* main.m in Sources */,
 				659036F31E2B8E6F0059DD8F /* guestContainerViewController.m in Sources */,
+				659037241E2BA7E70059DD8F /* miscData.m in Sources */,
+				6590370C1E2BA7660059DD8F /* optionsPage.m in Sources */,
+				659037121E2BA7810059DD8F /* billPage.m in Sources */,
+				659037211E2BA7CD0059DD8F /* placeDescriptionpage.m in Sources */,
 				659036F61E2B8E930059DD8F /* LoginViewController.m in Sources */,
+				659037061E2BA7470059DD8F /* reservationPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1167,11 +1667,65 @@
 		};
 		659035781E2B8CD30059DD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A15F1E0828518D4DDF268D /* Pods-SinopiaInn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LGXJMNYC2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SinopiaInn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Braintree\"",
+					"-l\"BraintreeDropIn\"",
+					"-l\"PPRiskComponent\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"PassKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Contacts\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Braintree\"",
+					"-l\"BraintreeDropIn\"",
+					"-l\"PPRiskComponent\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"PassKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Contacts\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = unifieddigitalmedia.SinopiaInn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1179,11 +1733,40 @@
 		};
 		659035791E2B8CD30059DD8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC40182DAAFD2FD6ED8C918 /* Pods-SinopiaInn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LGXJMNYC2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SinopiaInn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Braintree\"",
+					"-l\"BraintreeDropIn\"",
+					"-l\"PPRiskComponent\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"PassKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Contacts\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = unifieddigitalmedia.SinopiaInn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1191,6 +1774,7 @@
 		};
 		6590357B1E2B8CD30059DD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6518F39E9D5B20DE62CBE742 /* Pods-SinopiaInnTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SinopiaInnTests/Info.plist;
@@ -1203,6 +1787,7 @@
 		};
 		6590357C1E2B8CD30059DD8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB5E7073F7030C9641E6837 /* Pods-SinopiaInnTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SinopiaInnTests/Info.plist;
@@ -1215,6 +1800,7 @@
 		};
 		6590357E1E2B8CD30059DD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983777E00BBFA54EA6B7E4E3 /* Pods-SinopiaInnUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SinopiaInnUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1226,6 +1812,7 @@
 		};
 		6590357F1E2B8CD30059DD8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B725F26CA4803328D304991 /* Pods-SinopiaInnUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SinopiaInnUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1254,6 +1841,7 @@
 				659035791E2B8CD30059DD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6590357A1E2B8CD30059DD8F /* Build configuration list for PBXNativeTarget "SinopiaInnTests" */ = {
 			isa = XCConfigurationList;
@@ -1262,6 +1850,7 @@
 				6590357C1E2B8CD30059DD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6590357D1E2B8CD30059DD8F /* Build configuration list for PBXNativeTarget "SinopiaInnUITests" */ = {
 			isa = XCConfigurationList;
@@ -1270,6 +1859,7 @@
 				6590357F1E2B8CD30059DD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
