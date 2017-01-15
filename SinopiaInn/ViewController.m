@@ -2,14 +2,14 @@
 //  ViewController.m
 //  SinopiaInn
 //
-//  Created by Machel Slack on 16/08/2016.
-//  Copyright © 2016 Machel Slack. All rights reserved.
+//  Created by Machel Slack on 15/01/2017.
+//  Copyright © 2017 Machel Slack. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "guestContainer.h"
-#import "LoginViewController.h"
 
+#import "guestContainerViewController.h"
+#import "LoginViewController.h"
 #import "checkedinguestContainer.h"
 
 @interface ViewController ()
@@ -17,7 +17,6 @@
 @end
 
 @implementation ViewController
-
 
 
 @synthesize mainControllerOptions;
@@ -75,6 +74,7 @@
     [bottomRootview  addSubview:mainControllerOptions];
     
     [self.view addSubview:bottomRootview];
+    
     
     
     
@@ -290,13 +290,13 @@
             for (NSUInteger i = 0; i < [Array count]; i++) {
                 
                 
-        
+                
                 if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"token"] isEqualToString: [[Array objectAtIndex:i] objectForKey:@"token"]]) {
                     
                     
                     [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"checkedIn"];
                     
-                   
+                    
                     
                 }
                 
@@ -317,7 +317,7 @@
     
     if( [[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue ] != 0 ){
         
-      
+        
         
         checkedinguestContainer *checkinPage = [[checkedinguestContainer alloc] init];
         
@@ -325,7 +325,7 @@
         
     }else {
         
-         [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"checkedIn"];
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"checkedIn"];
         
         LoginViewController *checkinPage = [[LoginViewController alloc] init];
         
@@ -336,18 +336,20 @@
     
     
     
-
-   
+    
+    
     
 }
 
 
 - (IBAction)gotoHomepage:(id)sender {
     
-     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"checkedIn"];
     
+    NSLog(@"back button pressed");
     
-    guestContainer *homePage = [[guestContainer alloc] init];
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"checkedIn"];
+    
+    guestContainerViewController *homePage = [[guestContainerViewController alloc] init];
     
     [self.navigationController pushViewController:homePage animated:YES];
     

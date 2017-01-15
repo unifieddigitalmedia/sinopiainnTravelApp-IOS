@@ -2,8 +2,8 @@
 //  LoginViewController.h
 //  SinopiaInn
 //
-//  Created by Machel Slack on 16/08/2016.
-//  Copyright © 2016 Machel Slack. All rights reserved.
+//  Created by Machel Slack on 15/01/2017.
+//  Copyright © 2017 Machel Slack. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -19,5 +19,6 @@
 @property(nonatomic,retain) UIView * topRootview;
 @property(nonatomic,retain) UIView * bottomRootview;
 @property(nonatomic,retain) UIColor* myColor;
+
 
 @end

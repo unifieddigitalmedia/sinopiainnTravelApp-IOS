@@ -2,8 +2,8 @@
 //  LoginViewController.m
 //  SinopiaInn
 //
-//  Created by Machel Slack on 16/08/2016.
-//  Copyright © 2016 Machel Slack. All rights reserved.
+//  Created by Machel Slack on 15/01/2017.
+//  Copyright © 2017 Machel Slack. All rights reserved.
 //
 
 #import "LoginViewController.h"
@@ -32,18 +32,7 @@ UITextField* roomsField;
     
     [self.view endEditing:YES];
     
-   myColor = [UIColor colorWithRed:170.0f/255.0f green:157.0f/255.0f blue:46.0f/255.0f alpha:1.0f];
-    
-    
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"ic_chevron_left"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] style:UIBarButtonItemStylePlain target:self action:@selector(backbuttonpressed:)];
-    
-    
-    
-    newBackButton.tintColor = myColor;
-    
-    
-    
-    self.navigationItem.leftBarButtonItem=newBackButton;
+    myColor = [UIColor colorWithRed:170.0f/255.0f green:157.0f/255.0f blue:46.0f/255.0f alpha:1.0f];
     
     
     
@@ -115,7 +104,7 @@ UITextField* roomsField;
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-
+    
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -138,7 +127,7 @@ UITextField* roomsField;
     {
         
         
-     roomsField = [[UITextField alloc] initWithFrame:CGRectMake(10,10,cell.frame.size.width - 20 ,cell.frame.size.height - 10)];
+        roomsField = [[UITextField alloc] initWithFrame:CGRectMake(10,10,cell.frame.size.width - 20 ,cell.frame.size.height - 10)];
         
         roomsField.placeholder = @"Please enter the check token you received in your email:";
         
@@ -157,7 +146,7 @@ UITextField* roomsField;
         [roomsField setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
         
         roomsField.delegate = self;
-                
+        
         [cell.contentView addSubview:[self addBorder:roomsField]];
         
         
@@ -244,28 +233,38 @@ UITextField* roomsField;
         dispatch_async(dispatch_get_main_queue(), ^{
             
             
-        for (NSUInteger i = 0; i < [Array count]; i++) {
-            
-            
-        
-            
-            if ([roomsField.text isEqualToString: [[Array objectAtIndex:i] objectForKey:@"token"]]) {
-
-             
+            for (NSUInteger i = 0; i < [Array count]; i++) {
                 
-                [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"checkedIn"];
-
-                [[NSUserDefaults standardUserDefaults] setObject:roomsField.text forKey:@"token"];
-     
                 
-             [self.navigationController pushViewController:[[checkedinguestContainer alloc] init] animated:YES];
-             
+                if ([roomsField.text isEqualToString: [[Array objectAtIndex:i] objectForKey:@"token"]]) {
+                    
+                    
+                    [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"checkedIn"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:roomsField.text forKey:@"token"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"_id"] forKey:@"reservationID"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"fname"] forKey:@"fname"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"lname"] forKey:@"lname"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"fromdate"] forKey:@"fromdate"];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"todate"] forKey:@"todate"];
+                    
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@ %@",[[Array objectAtIndex:i] objectForKey:@"fname"] ,[[Array objectAtIndex:i] objectForKey:@"lname"]] forKey:@"name"];
+                    
+                    
+                    [self.navigationController pushViewController:[[checkedinguestContainer alloc] init] animated:YES];
+                    
                 }
-
+                
                 
                 
             }
-
+            
             
             
             
@@ -275,12 +274,12 @@ UITextField* roomsField;
     }];
     
     [dataTask resume];
-
     
     
-   
-
-   
+    
+    
+    
+    
     
 }
 
