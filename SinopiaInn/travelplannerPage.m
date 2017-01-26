@@ -498,7 +498,7 @@ NSArray *imagesArray;
             jsonbusinessServiceArray = [[NSMutableArray alloc] init];
             
             
-            if([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue ] == 1 ){
+           /* if([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue ] == 1 ){
                 
                 id <checkedinguestContainer> parentViewController = (id)self.parentViewController;
                 
@@ -516,7 +516,7 @@ NSArray *imagesArray;
                 [parentViewController gotoOptionspage:jsonbusinessServiceArray];
                 
                 
-            }
+            }*/
             
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 

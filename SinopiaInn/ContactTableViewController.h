@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContactTableViewController : UIViewController
+@interface ContactTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
+
+
+@property(nonatomic, readwrite) int width;
+@property(nonatomic, readwrite) int height;
+
+- (id)initWithHeight:(int)width initWithWidth:(int)height;
+@property(nonatomic,retain) UITableView *mainTableView;
+
+@property(nonatomic,retain) UIColor *sinopia;
 @end

@@ -191,11 +191,13 @@
         [cell.contentView addSubview:view];
         
         
-        UILabel *placeholderTextView = [[UILabel alloc]initWithFrame:CGRectMake(0, view.frame.size.height, tableView.frame.size.width , 35)];
+        UILabel *placeholderTextView = [[UILabel alloc]initWithFrame:CGRectMake(10, view.frame.size.height, tableView.frame.size.width -20 , 35)];
         
-        UILabel *placeholderDescriptionTextView = [[UILabel alloc]initWithFrame:CGRectMake(0, placeholderTextView.frame.origin.y + placeholderTextView.frame.size.height, tableView.frame.size.width , 35)];
+        UILabel *placeholderDescriptionTextView = [[UILabel alloc]initWithFrame:CGRectMake(10, placeholderTextView.frame.origin.y + placeholderTextView.frame.size.height, tableView.frame.size.width -20 , 35)];
         
+        placeholderTextView.lineBreakMode = NSLineBreakByWordWrapping;
         
+        placeholderDescriptionTextView.lineBreakMode = NSLineBreakByWordWrapping;
         
         if([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue ] == 0 && [[[NSUserDefaults standardUserDefaults] objectForKey:@"optionPage"] intValue ] == 3){
             
@@ -276,6 +278,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    
     
     UITableViewCell* cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
@@ -444,55 +448,11 @@
         
     }
     
+
     
 }
 
 
-- (IBAction)gotoItempage:(id)sender {
-    
-    
-    if([[[NSUserDefaults standardUserDefaults] objectForKey:@"optionsPage"] intValue] == 4 || ([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue] == 0 && [[[NSUserDefaults standardUserDefaults] objectForKey:@"optionsPage"] intValue] == 3)){
-        
-        
-        id <checkedinguestContainer > parentViewController = (id)self.parentViewController;
-        
-        
-        [[NSUserDefaults standardUserDefaults] setObject:[[jsonArray objectAtIndex: [sender tag]] objectForKey:@"location"] forKey:@"location"];
-        
-        
-        [parentViewController gotoTripplannerpageList];
-        
-        
-        
-        
-        
-    } else {
-        
-        if([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue] != 0){
-            
-            id <checkedinguestContainer > parentViewController = (id)self.parentViewController;
-            
-            
-            [parentViewController gotoItemdescriptionpage:[jsonArray objectAtIndex: [sender tag]]];
-            
-            
-        }else{
-            
-            id <guestContainer> parentViewController = (id)self.parentViewController;
-            
-            
-            [parentViewController gotoItemdescriptionpage:[jsonArray objectAtIndex: [sender tag]]];
-            
-        }
-        
-        
-    }
-    
-    
-    
-    
-    
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -500,7 +460,7 @@
     if(indexPath.row != [jsonArray count] + 1){
         
         
-        return 270;
+        return 300;
     }
     
     

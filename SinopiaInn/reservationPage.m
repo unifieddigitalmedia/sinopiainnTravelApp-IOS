@@ -255,6 +255,14 @@ NSString *fullurl;
         
         FromDate = [[UITextField alloc] initWithFrame:CGRectMake(10,5, cell.frame.size.width /2 - 20 ,cell.frame.size.height - 10)];
         
+        
+        if ([FromDate respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+            UIColor *color = [UIColor redColor];
+            FromDate.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Your placeholder text" attributes:@{NSForegroundColorAttributeName: color}];
+        } else {
+            NSLog(@"Cannot set placeholder text's color, because deployment target is earlier than iOS 6.0");
+            // TODO: Add fall-back code to set placeholder color.
+        }
         FromDate.rightViewMode = UITextFieldViewModeAlways;
         
         UIImage *myImage = [UIImage imageNamed:@"ic_date_range"];
@@ -661,7 +669,6 @@ NSString *fullurl;
     
     
 }
-
 
 
 
@@ -1108,7 +1115,8 @@ numberOfRowsInComponent:(NSInteger)component
     
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:initalDate] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
-        id <guestContainer> parentViewController = (id)self.parentViewController;
+        
+       id <guestContainer> parentViewController = (id)self.parentViewController;
         
         parentViewController.validation= [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         

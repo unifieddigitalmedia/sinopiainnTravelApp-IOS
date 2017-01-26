@@ -468,6 +468,9 @@ NSArray* guestjsonArray;
             } else if (result.cancelled) {
                 NSLog(@"CANCELLED");
             } else {
+                
+                  NSLog(@"result %@",result);
+                
                 // Use the BTDropInResult properties to update your UI
                 // result.paymentOptionType
                 // result.paymentMethod
@@ -669,20 +672,44 @@ NSArray* guestjsonArray;
     
     dispatch_queue_t queue = dispatch_queue_create("", NULL);
     
-    for (int i = 0 ; i < 4 ; i++){
-        
+    
         
         NSArray *keys = [NSArray arrayWithObjects:@"name", @"description", @"url",  @"location" , nil];
-        NSArray *objects = [NSArray arrayWithObjects:@"value1", @"value2", @"" , @"portland" , nil];
+        NSArray *objects = [NSArray arrayWithObjects:@"Portland", @"Even though it is a quiet and beautiful haven, Portland isn’t only visited for its charm. If you’ve got an eye for arts and crafts, and all the jewels Jamaica has to offer.", @"" , @"portland" , nil];
+    
         NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
         
         
         [locations addObject:dictionary];
         
         
-        
-        
-    }
+    keys = [NSArray arrayWithObjects:@"name", @"description", @"url",  @"location" , nil];
+    objects = [NSArray arrayWithObjects:@"Ocho Rios", @"From exquisite luxury plazas, filled with world-class brands, to traditional stalls and stores, where one can uncover all kinds of charming mementos.", @"" , @"portland" , nil];
+    
+    dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    
+    
+    [locations addObject:dictionary];
+    
+    
+    
+    
+    keys = [NSArray arrayWithObjects:@"name", @"description", @"url",  @"location" , nil];
+    objects = [NSArray arrayWithObjects:@"Kingston", @"Kingston is one-of-a-kind. A busy cosmopolitan, half exotic jungle, bursting with sunshine, and half thriving business. With plenty to see and do.", @"" , @"portland" , nil];
+    
+    dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    
+    
+    [locations addObject:dictionary];
+    
+    
+    keys = [NSArray arrayWithObjects:@"name", @"description", @"url",  @"location" , nil];
+    objects = [NSArray arrayWithObjects:@"Montego Bay & Negril", @"Montego Bay & Negril's  white, sandy beaches, can offer you a perfectly long, lazy day, soaking up the sun  under deep blue skies.", @"" , @"portland" , nil];
+    
+    dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    
+    
+    [locations addObject:dictionary];
     
     dispatch_async(queue, ^{
         
@@ -748,7 +775,7 @@ NSArray* guestjsonArray;
     
 }
 
-/*-(void) gotoRecipespage {
+-(void) gotoRecipespage {
     
     
     
@@ -779,7 +806,7 @@ NSArray* guestjsonArray;
     
     
     
-}*/
+}
 
 
 -(void) gotoItemlist:(NSArray*)jsonArray {
@@ -1056,7 +1083,7 @@ NSArray* guestjsonArray;
 - (IBAction)gotoContact:(id)sender {
     
     
-    //[self presentDetailController:[[ContactTableViewController alloc] initWithHeight:(int) self.view.frame.size.height - HomePageToolbar.frame.size.height initWithWidth:(int) self.view.frame.size.width]];
+   [self presentDetailController:[[ContactTableViewController alloc] initWithHeight:(int) self.view.frame.size.height - HomePageToolbar.frame.size.height initWithWidth:(int) self.view.frame.size.width]];
     
 }
 

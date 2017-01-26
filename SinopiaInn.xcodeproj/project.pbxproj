@@ -264,6 +264,13 @@
 		6590379B1E2BD7C10059DD8F /* ThumbsViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037921E2BD7C10059DD8F /* ThumbsViewController.h */; };
 		6590379C1E2BD7C10059DD8F /* UIXToolbarView.h in Resources */ = {isa = PBXBuildFile; fileRef = 659037931E2BD7C10059DD8F /* UIXToolbarView.h */; };
 		6590379F1E2BD8A10059DD8F /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */; };
+		65BEABFF1E39FB4400444DCC /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEABFE1E39FB4400444DCC /* TimelineViewController.m */; };
+		65BEAC021E39FB6A00444DCC /* confirmationPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC011E39FB6A00444DCC /* confirmationPage.m */; };
+		65BEAC051E39FB8000444DCC /* OurVillaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC041E39FB8000444DCC /* OurVillaViewController.m */; };
+		65BEAC081E39FB9400444DCC /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC071E39FB9400444DCC /* TimeViewController.m */; };
+		65BEAC0B1E39FBA700444DCC /* BigPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC0A1E39FBA700444DCC /* BigPhotoViewController.m */; };
+		65BEAC0E1E39FBBD00444DCC /* GuestBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC0D1E39FBBD00444DCC /* GuestBookViewController.m */; };
+		65BEAC111E39FBCF00444DCC /* newCommentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEAC101E39FBCF00444DCC /* newCommentPageViewController.m */; };
 		96552BA8CAD2AC7828B8D70E /* libPods-SinopiaInn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B98F771D07D215965781CD5 /* libPods-SinopiaInn.a */; };
 		9A87C5320A5C8A4D5BA3CD26 /* libPods-SinopiaInnUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85621A1B9D1C2F2D80197DC8 /* libPods-SinopiaInnUITests.a */; };
 /* End PBXBuildFile section */
@@ -573,6 +580,20 @@
 		659037931E2BD7C10059DD8F /* UIXToolbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = SinopiaInn/PDF/Sources/UIXToolbarView.h; sourceTree = "<group>"; };
 		6590379D1E2BD7FE0059DD8F /* ReaderThumbCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = SinopiaInn/PDF/Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
 		6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = SinopiaInn/PDF/Sources/ReaderThumbCache.m; sourceTree = "<group>"; };
+		65BEABFD1E39FB4400444DCC /* TimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
+		65BEABFE1E39FB4400444DCC /* TimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
+		65BEAC001E39FB6A00444DCC /* confirmationPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirmationPage.h; sourceTree = "<group>"; };
+		65BEAC011E39FB6A00444DCC /* confirmationPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = confirmationPage.m; sourceTree = "<group>"; };
+		65BEAC031E39FB8000444DCC /* OurVillaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurVillaViewController.h; sourceTree = "<group>"; };
+		65BEAC041E39FB8000444DCC /* OurVillaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurVillaViewController.m; sourceTree = "<group>"; };
+		65BEAC061E39FB9400444DCC /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		65BEAC071E39FB9400444DCC /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		65BEAC091E39FBA700444DCC /* BigPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPhotoViewController.h; sourceTree = "<group>"; };
+		65BEAC0A1E39FBA700444DCC /* BigPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPhotoViewController.m; sourceTree = "<group>"; };
+		65BEAC0C1E39FBBD00444DCC /* GuestBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestBookViewController.h; sourceTree = "<group>"; };
+		65BEAC0D1E39FBBD00444DCC /* GuestBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestBookViewController.m; sourceTree = "<group>"; };
+		65BEAC0F1E39FBCF00444DCC /* newCommentPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newCommentPageViewController.h; sourceTree = "<group>"; };
+		65BEAC101E39FBCF00444DCC /* newCommentPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newCommentPageViewController.m; sourceTree = "<group>"; };
 		6B725F26CA4803328D304991 /* Pods-SinopiaInnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinopiaInnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinopiaInnUITests/Pods-SinopiaInnUITests.release.xcconfig"; sourceTree = "<group>"; };
 		755A728CFBE49BADCB63A5B9 /* libPods-SinopiaInnTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinopiaInnTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B98F771D07D215965781CD5 /* libPods-SinopiaInn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinopiaInn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -633,46 +654,7 @@
 		659035411E2B8CD20059DD8F = {
 			isa = PBXGroup;
 			children = (
-				6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */,
-				6590379D1E2BD7FE0059DD8F /* ReaderThumbCache.h */,
-				6590378B1E2BD7C10059DD8F /* ReaderThumbQueue.h */,
-				6590378C1E2BD7C10059DD8F /* ReaderThumbRender.h */,
-				6590378D1E2BD7C10059DD8F /* ReaderThumbRequest.h */,
-				6590378E1E2BD7C10059DD8F /* ReaderThumbsView.h */,
-				6590378F1E2BD7C10059DD8F /* ReaderThumbView.h */,
-				659037901E2BD7C10059DD8F /* ReaderViewController.h */,
-				659037911E2BD7C10059DD8F /* ThumbsMainToolbar.h */,
-				659037921E2BD7C10059DD8F /* ThumbsViewController.h */,
-				659037931E2BD7C10059DD8F /* UIXToolbarView.h */,
-				659037771E2BD79E0059DD8F /* CGPDFDocument.h */,
-				659037781E2BD79E0059DD8F /* ReaderConstants.h */,
-				659037791E2BD79E0059DD8F /* ReaderContentPage.h */,
-				6590377A1E2BD79E0059DD8F /* ReaderContentTile.h */,
-				6590377B1E2BD79E0059DD8F /* ReaderContentView.h */,
-				6590377C1E2BD79E0059DD8F /* ReaderDocument.h */,
-				6590377D1E2BD79E0059DD8F /* ReaderDocumentOutline.h */,
-				6590377E1E2BD79E0059DD8F /* ReaderMainPagebar.h */,
-				6590377F1E2BD79E0059DD8F /* ReaderMainToolbar.h */,
-				659037801E2BD79E0059DD8F /* ReaderThumbCache.h */,
-				659037631E2BD75D0059DD8F /* ReaderThumbFetch.m */,
-				659037641E2BD75D0059DD8F /* ReaderThumbQueue.m */,
-				659037651E2BD75D0059DD8F /* ReaderThumbRender.m */,
-				659037661E2BD75D0059DD8F /* ReaderThumbRequest.m */,
-				659037671E2BD75D0059DD8F /* ReaderThumbsView.m */,
-				659037681E2BD75D0059DD8F /* ReaderThumbView.m */,
-				659037691E2BD75D0059DD8F /* ReaderViewController.m */,
-				6590376A1E2BD75D0059DD8F /* ThumbsMainToolbar.m */,
-				6590376B1E2BD75D0059DD8F /* ThumbsViewController.m */,
-				6590376C1E2BD75D0059DD8F /* UIXToolbarView.m */,
-				659037511E2BD73F0059DD8F /* CGPDFDocument.m */,
-				659037521E2BD73F0059DD8F /* ReaderConstants.m */,
-				659037531E2BD73F0059DD8F /* ReaderContentPage.m */,
-				659037541E2BD73F0059DD8F /* ReaderContentTile.m */,
-				659037551E2BD73F0059DD8F /* ReaderContentView.m */,
-				659037561E2BD73F0059DD8F /* ReaderDocument.m */,
-				659037571E2BD7400059DD8F /* ReaderDocumentOutline.m */,
-				659037581E2BD7400059DD8F /* ReaderMainPagebar.m */,
-				659037591E2BD7400059DD8F /* ReaderMainToolbar.m */,
+				659037A01E2BDC0D0059DD8F /* PDF Reader */,
 				6590354C1E2B8CD20059DD8F /* SinopiaInn */,
 				659035661E2B8CD30059DD8F /* SinopiaInnTests */,
 				659035711E2B8CD30059DD8F /* SinopiaInnUITests */,
@@ -701,12 +683,10 @@
 				659035511E2B8CD30059DD8F /* AppDelegate.m */,
 				659035531E2B8CD30059DD8F /* ViewController.h */,
 				659035541E2B8CD30059DD8F /* ViewController.m */,
-				659036F71E2B8EA90059DD8F /* checkedinguestContainer.h */,
-				659036F81E2B8EA90059DD8F /* checkedinguestContainer.m */,
 				659036F41E2B8E930059DD8F /* LoginViewController.h */,
 				659036F51E2B8E930059DD8F /* LoginViewController.m */,
-				659036F11E2B8E6F0059DD8F /* guestContainerViewController.h */,
-				659036F21E2B8E6F0059DD8F /* guestContainerViewController.m */,
+				65BEAC141E3A116000444DCC /* GUEST */,
+				65BEAC151E3A11A500444DCC /* VISITOR */,
 				659037281E2BA8070059DD8F /* ContactTableViewController.h */,
 				659037291E2BA8070059DD8F /* ContactTableViewController.m */,
 				659037251E2BA7F60059DD8F /* MapViewController.h */,
@@ -725,14 +705,8 @@
 				659037141E2BA78F0059DD8F /* travelplannerPage.m */,
 				659037101E2BA7810059DD8F /* billPage.h */,
 				659037111E2BA7810059DD8F /* billPage.m */,
-				6590370D1E2BA7740059DD8F /* personaldetailsPage.h */,
-				6590370E1E2BA7740059DD8F /* personaldetailsPage.m */,
 				6590370A1E2BA7660059DD8F /* optionsPage.h */,
 				6590370B1E2BA7660059DD8F /* optionsPage.m */,
-				659037071E2BA7590059DD8F /* receptionPage.h */,
-				659037081E2BA7590059DD8F /* receptionPage.m */,
-				659037041E2BA7470059DD8F /* reservationPage.h */,
-				659037051E2BA7470059DD8F /* reservationPage.m */,
 				659037011E2BA72F0059DD8F /* optionPageB.h */,
 				659037021E2BA72F0059DD8F /* optionPageB.m */,
 				659036FE1E2BA71E0059DD8F /* optionPageC.h */,
@@ -960,6 +934,99 @@
 				659036381E2B8DC70059DD8F /* sinopia_inn.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		659037A01E2BDC0D0059DD8F /* PDF Reader */ = {
+			isa = PBXGroup;
+			children = (
+				659037A11E2BDC210059DD8F /* Sources */,
+			);
+			name = "PDF Reader";
+			sourceTree = "<group>";
+		};
+		659037A11E2BDC210059DD8F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6590379E1E2BD8A10059DD8F /* ReaderThumbCache.m */,
+				6590379D1E2BD7FE0059DD8F /* ReaderThumbCache.h */,
+				6590378B1E2BD7C10059DD8F /* ReaderThumbQueue.h */,
+				6590378C1E2BD7C10059DD8F /* ReaderThumbRender.h */,
+				6590378D1E2BD7C10059DD8F /* ReaderThumbRequest.h */,
+				6590378E1E2BD7C10059DD8F /* ReaderThumbsView.h */,
+				6590378F1E2BD7C10059DD8F /* ReaderThumbView.h */,
+				659037901E2BD7C10059DD8F /* ReaderViewController.h */,
+				659037911E2BD7C10059DD8F /* ThumbsMainToolbar.h */,
+				659037921E2BD7C10059DD8F /* ThumbsViewController.h */,
+				659037931E2BD7C10059DD8F /* UIXToolbarView.h */,
+				659037771E2BD79E0059DD8F /* CGPDFDocument.h */,
+				659037781E2BD79E0059DD8F /* ReaderConstants.h */,
+				659037791E2BD79E0059DD8F /* ReaderContentPage.h */,
+				6590377A1E2BD79E0059DD8F /* ReaderContentTile.h */,
+				6590377B1E2BD79E0059DD8F /* ReaderContentView.h */,
+				6590377C1E2BD79E0059DD8F /* ReaderDocument.h */,
+				6590377D1E2BD79E0059DD8F /* ReaderDocumentOutline.h */,
+				6590377E1E2BD79E0059DD8F /* ReaderMainPagebar.h */,
+				6590377F1E2BD79E0059DD8F /* ReaderMainToolbar.h */,
+				659037801E2BD79E0059DD8F /* ReaderThumbCache.h */,
+				659037631E2BD75D0059DD8F /* ReaderThumbFetch.m */,
+				659037641E2BD75D0059DD8F /* ReaderThumbQueue.m */,
+				659037651E2BD75D0059DD8F /* ReaderThumbRender.m */,
+				659037661E2BD75D0059DD8F /* ReaderThumbRequest.m */,
+				659037671E2BD75D0059DD8F /* ReaderThumbsView.m */,
+				659037681E2BD75D0059DD8F /* ReaderThumbView.m */,
+				659037691E2BD75D0059DD8F /* ReaderViewController.m */,
+				6590376A1E2BD75D0059DD8F /* ThumbsMainToolbar.m */,
+				6590376B1E2BD75D0059DD8F /* ThumbsViewController.m */,
+				6590376C1E2BD75D0059DD8F /* UIXToolbarView.m */,
+				659037511E2BD73F0059DD8F /* CGPDFDocument.m */,
+				659037521E2BD73F0059DD8F /* ReaderConstants.m */,
+				659037531E2BD73F0059DD8F /* ReaderContentPage.m */,
+				659037541E2BD73F0059DD8F /* ReaderContentTile.m */,
+				659037551E2BD73F0059DD8F /* ReaderContentView.m */,
+				659037561E2BD73F0059DD8F /* ReaderDocument.m */,
+				659037571E2BD7400059DD8F /* ReaderDocumentOutline.m */,
+				659037581E2BD7400059DD8F /* ReaderMainPagebar.m */,
+				659037591E2BD7400059DD8F /* ReaderMainToolbar.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		65BEAC141E3A116000444DCC /* GUEST */ = {
+			isa = PBXGroup;
+			children = (
+				659036F71E2B8EA90059DD8F /* checkedinguestContainer.h */,
+				659036F81E2B8EA90059DD8F /* checkedinguestContainer.m */,
+				65BEAC031E39FB8000444DCC /* OurVillaViewController.h */,
+				65BEAC041E39FB8000444DCC /* OurVillaViewController.m */,
+				65BEAC0F1E39FBCF00444DCC /* newCommentPageViewController.h */,
+				65BEAC101E39FBCF00444DCC /* newCommentPageViewController.m */,
+				65BEAC0C1E39FBBD00444DCC /* GuestBookViewController.h */,
+				65BEAC0D1E39FBBD00444DCC /* GuestBookViewController.m */,
+				65BEAC091E39FBA700444DCC /* BigPhotoViewController.h */,
+				65BEAC0A1E39FBA700444DCC /* BigPhotoViewController.m */,
+				65BEAC061E39FB9400444DCC /* TimeViewController.h */,
+				65BEAC071E39FB9400444DCC /* TimeViewController.m */,
+				65BEAC001E39FB6A00444DCC /* confirmationPage.h */,
+				65BEAC011E39FB6A00444DCC /* confirmationPage.m */,
+				65BEABFD1E39FB4400444DCC /* TimelineViewController.h */,
+				65BEABFE1E39FB4400444DCC /* TimelineViewController.m */,
+			);
+			name = GUEST;
+			sourceTree = "<group>";
+		};
+		65BEAC151E3A11A500444DCC /* VISITOR */ = {
+			isa = PBXGroup;
+			children = (
+				659036F11E2B8E6F0059DD8F /* guestContainerViewController.h */,
+				659036F21E2B8E6F0059DD8F /* guestContainerViewController.m */,
+				6590370D1E2BA7740059DD8F /* personaldetailsPage.h */,
+				6590370E1E2BA7740059DD8F /* personaldetailsPage.m */,
+				659037071E2BA7590059DD8F /* receptionPage.h */,
+				659037081E2BA7590059DD8F /* receptionPage.m */,
+				659037041E2BA7470059DD8F /* reservationPage.h */,
+				659037051E2BA7470059DD8F /* reservationPage.m */,
+			);
+			name = VISITOR;
 			sourceTree = "<group>";
 		};
 		D74F470D492419CF192AEBD5 /* Frameworks */ = {
@@ -1481,6 +1548,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6590379F1E2BD8A10059DD8F /* ReaderThumbCache.m in Sources */,
+				65BEAC0E1E39FBBD00444DCC /* GuestBookViewController.m in Sources */,
+				65BEAC111E39FBCF00444DCC /* newCommentPageViewController.m in Sources */,
 				6590376D1E2BD75D0059DD8F /* ReaderThumbFetch.m in Sources */,
 				6590376E1E2BD75D0059DD8F /* ReaderThumbQueue.m in Sources */,
 				6590376F1E2BD75D0059DD8F /* ReaderThumbRender.m in Sources */,
@@ -1496,11 +1565,13 @@
 				6590375C1E2BD7400059DD8F /* ReaderContentPage.m in Sources */,
 				6590375D1E2BD7400059DD8F /* ReaderContentTile.m in Sources */,
 				6590375E1E2BD7400059DD8F /* ReaderContentView.m in Sources */,
+				65BEAC081E39FB9400444DCC /* TimeViewController.m in Sources */,
 				6590375F1E2BD7400059DD8F /* ReaderDocument.m in Sources */,
 				659037601E2BD7400059DD8F /* ReaderDocumentOutline.m in Sources */,
 				659037611E2BD7400059DD8F /* ReaderMainPagebar.m in Sources */,
 				659037621E2BD7400059DD8F /* ReaderMainToolbar.m in Sources */,
 				659037501E2BD7040059DD8F /* PDF in Sources */,
+				65BEABFF1E39FB4400444DCC /* TimelineViewController.m in Sources */,
 				659037181E2BA79D0059DD8F /* recipesPage.m in Sources */,
 				659037031E2BA72F0059DD8F /* optionPageB.m in Sources */,
 				659035551E2B8CD30059DD8F /* ViewController.m in Sources */,
@@ -1508,14 +1579,17 @@
 				6590372A1E2BA8070059DD8F /* ContactTableViewController.m in Sources */,
 				659037271E2BA7F60059DD8F /* MapViewController.m in Sources */,
 				6590371E1E2BA7BD0059DD8F /* itemDescription.m in Sources */,
+				65BEAC0B1E39FBA700444DCC /* BigPhotoViewController.m in Sources */,
 				659037091E2BA7590059DD8F /* receptionPage.m in Sources */,
 				659035521E2B8CD30059DD8F /* AppDelegate.m in Sources */,
 				6590371B1E2BA7A90059DD8F /* travelGuide.m in Sources */,
+				65BEAC051E39FB8000444DCC /* OurVillaViewController.m in Sources */,
 				6590370F1E2BA7740059DD8F /* personaldetailsPage.m in Sources */,
 				659036F91E2B8EA90059DD8F /* checkedinguestContainer.m in Sources */,
 				659037151E2BA78F0059DD8F /* travelplannerPage.m in Sources */,
 				659036FD1E2BA7100059DD8F /* optionPageD.m in Sources */,
 				6590354F1E2B8CD30059DD8F /* main.m in Sources */,
+				65BEAC021E39FB6A00444DCC /* confirmationPage.m in Sources */,
 				659036F31E2B8E6F0059DD8F /* guestContainerViewController.m in Sources */,
 				659037241E2BA7E70059DD8F /* miscData.m in Sources */,
 				6590370C1E2BA7660059DD8F /* optionsPage.m in Sources */,

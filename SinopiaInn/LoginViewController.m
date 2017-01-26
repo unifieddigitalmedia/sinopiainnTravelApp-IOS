@@ -253,6 +253,7 @@ UITextField* roomsField;
                     
                     [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"todate"] forKey:@"todate"];
                     
+                     [[NSUserDefaults standardUserDefaults] setObject:[[Array objectAtIndex:i] objectForKey:@"email"] forKey:@"email"];
                     
                     [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@ %@",[[Array objectAtIndex:i] objectForKey:@"fname"] ,[[Array objectAtIndex:i] objectForKey:@"lname"]] forKey:@"name"];
                     
@@ -261,7 +262,7 @@ UITextField* roomsField;
                     
                 }
                 
-                
+               
                 
             }
             

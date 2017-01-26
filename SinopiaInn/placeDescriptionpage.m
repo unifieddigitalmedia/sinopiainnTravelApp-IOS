@@ -79,32 +79,10 @@ NSArray *imagesPlace;
     
     imageView.image = [UIImage imageNamed:@"sinopia_inn.png"];
     
-    [self.tableView addSubview:imageView];
+    [headerView addSubview:imageView];
     
+    self.tableView.tableHeaderView = headerView;
     
-    UIImage *btnImage = [UIImage imageNamed:@"ic_local_see"];
-    
-    [gotoPersonalDetails setImage:btnImage forState:UIControlStateNormal];
-    
-    
-    [gotoPersonalDetails.titleLabel setTextAlignment: NSTextAlignmentCenter];
-    
-    
-    [gotoPersonalDetails addTarget:self action:@selector(returnList:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [[gotoPersonalDetails layer] setBorderColor:myColor.CGColor];
-    
-    [[gotoPersonalDetails layer] setBackgroundColor:myColor.CGColor];
-    
-    gotoPersonalDetails.layer.cornerRadius = gotoPersonalDetails.frame.size.width / 2;
-    
-    gotoPersonalDetails.layer.borderWidth = 3.0f;
-    
-    gotoPersonalDetails.clipsToBounds = YES;
-    
-    [headerView bringSubviewToFront:gotoPersonalDetails];
-    
-    [headerView addSubview:gotoPersonalDetails];
     
     [jsonObject objectForKey:@"businessaddress"] ;
     
@@ -129,7 +107,7 @@ NSArray *imagesPlace;
     
     
     
-    return 3;
+    return 2;
     
     
 }
@@ -137,7 +115,7 @@ NSArray *imagesPlace;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 
 {
-    if(section != 2){
+    if(section != 1){
         
         
         return 1;
@@ -155,12 +133,8 @@ NSArray *imagesPlace;
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-        
-    }
+  
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -168,109 +142,11 @@ NSArray *imagesPlace;
     
     tableView.tintColor = myColor;
     
-    if(indexPath.section == 0){
-        
-        
-        
-        HomePageToolbar  = [[UIToolbar alloc] initWithFrame:CGRectMake(10,cell.frame.size.height / 2 ,cell.frame.size.width - 20 ,cell.frame.size.height  )];
-        
-        HomePageToolbar.tintColor = [UIColor whiteColor];
-        
-        HomePageToolbar.barTintColor = sinopia;
-        
-        
-        UIButton *HomePageCalButton = [[UIButton alloc] initWithFrame:CGRectMake(0,0,self.view.frame.size.width/3,HomePageToolbar.frame.size.height  )];
-        
-        [HomePageCalButton setTitle:@"RESERVATION" forState:UIControlStateNormal];
-        
-        [HomePageCalButton.titleLabel setTextAlignment: NSTextAlignmentCenter];
-        
-        UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:12.0];
-        
-        HomePageCalButton.titleLabel.font = cellFont;
-        
-        [HomePageCalButton addTarget:self action:@selector(gotoReservation:) forControlEvents:UIControlEventTouchUpInside];
-        
-        [[HomePageCalButton layer] setBorderWidth:0.5f];
-        
-        [[HomePageCalButton layer] setBorderColor:[UIColor clearColor].CGColor];
-        
-        [HomePageCalButton setTitleColor:[UIColor whiteColor]  forState:UIControlStateNormal];
-        
-        
-        [HomePageCalButton setImage:[UIImage imageNamed:@"ic_home_white"] forState:UIControlStateNormal];
-        
-        
-        
-        [HomePageToolbar addSubview:[self designButtonwithText:HomePageCalButton]];
-        
-        
-        UIButton *HomePageAccountButton = [[UIButton alloc] initWithFrame:CGRectMake(HomePageCalButton.frame.size.width,0,self.view.frame.size.width/3,HomePageToolbar.frame.size.height )];
-        
-        
-        [HomePageAccountButton addTarget:self action:@selector(gotoTraveltips:) forControlEvents:UIControlEventTouchUpInside];
-        
-        
-        
-        [HomePageAccountButton setTitle:@"GUIDE" forState:UIControlStateNormal];
-        
-        [[HomePageAccountButton layer] setBorderWidth:0.5f];
-        
-        HomePageAccountButton.titleLabel.font = cellFont;
-        
-        
-        [[HomePageAccountButton layer] setBorderColor:[UIColor clearColor].CGColor];
-        
-        [HomePageAccountButton setTitleColor:[UIColor whiteColor]  forState:UIControlStateNormal];
-        
-        [HomePageAccountButton setImage:[UIImage imageNamed:@"ic_card_travel_white"] forState:UIControlStateNormal];
-        
-        [HomePageToolbar addSubview:[self designButtonwithText:HomePageAccountButton]];
-        
-        UIButton *HomePageHelpButton = [[UIButton alloc] initWithFrame:CGRectMake(HomePageAccountButton.frame.origin.x + HomePageAccountButton.frame.size.width,0,self.view.frame.size.width/3,HomePageToolbar.frame.size.height  )];
-        
-        [HomePageHelpButton setTitle:@"HELP" forState:UIControlStateNormal];
-        
-        
-        
-        HomePageHelpButton.titleLabel.font = cellFont;
-        
-        
-        
-        [[HomePageHelpButton layer] setBorderWidth:0.5f];
-        
-        HomePageHelpButton.titleLabel.font = cellFont;
-        
-        
-        [[HomePageHelpButton layer] setBorderColor:[UIColor clearColor].CGColor];
-        
-        
-        [HomePageHelpButton addTarget:self action:@selector(gotoContact:) forControlEvents:UIControlEventTouchUpInside];
-        
-        
-        
-        [[HomePageHelpButton layer] setBorderColor:[UIColor clearColor].CGColor];
-        
-        [HomePageHelpButton setTitleColor:[UIColor whiteColor]  forState:UIControlStateNormal];
-        
-        [HomePageHelpButton setImage:[UIImage imageNamed:@"ic_help_outline_white"] forState:UIControlStateNormal];
-        
-        
-        
-        [HomePageToolbar addSubview:[self designButtonwithText:HomePageHelpButton]];
-        
-        //[cell.contentView addSubview:HomePageToolbar];
-        
-        
-        cell.backgroundColor = [UIColor clearColor];
-        
-        return  cell;
-        
-    } else if(indexPath.section == 1 ){
+    if(indexPath.section == 0 ){
         
         gotoPersonalDetails = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         
-        gotoPersonalDetails.frame = CGRectMake(10,10,cell.frame.size.width - 20 ,cell.frame.size.height - 10);
+        gotoPersonalDetails.frame = CGRectMake(10,10 ,cell.frame.size.width - 20 ,cell.frame.size.height - 10 );
         
         if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"checkedIn"] intValue ] == 1 ){
             
@@ -415,7 +291,7 @@ NSArray *imagesPlace;
             
             cell.backgroundColor = [UIColor clearColor];
             
-            return  cell;
+           return  cell;
             
             
         }
@@ -543,17 +419,14 @@ NSArray *imagesPlace;
 {
     NSString *sectionName;
     
-    sectionName = @"";
+    sectionName = @" ";
     
     return sectionName;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(indexPath.section == 0){
-        
-        return 100;
-    }
+ 
     return 60;
     
 }

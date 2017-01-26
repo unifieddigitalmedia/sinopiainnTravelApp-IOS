@@ -7,16 +7,32 @@
 //
 
 #import "AppDelegate.h"
-
+#import "miscData.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+miscData *sharedManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    
+    
+    
+    sharedManager = [miscData sharedManager];
+    
+    [sharedManager getMenufiles:@"http://www.sinopiainn.com/api/menu/"];
+    
+    [sharedManager getBooksfiles:@"http://www.sinopiainn.com/api/books/"];
+    
+    [sharedManager reloadtimelinefiles:@"http://www.sinopiainn.com/api/timeline?email=%@"];
+    
+    [sharedManager reloadpicturefiles];
+    
+    [sharedManager getCommentfiles];
+    
+    
     return YES;
 }
 
